@@ -1,0 +1,24 @@
+<!-- <h3>{{ char.famousTagline }}</h3>
+ -->
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <div class="card p-2" style="width: 35rem;">
+        <h1>ParentComponent</h1>
+        <p>Luffy's Dream {{ charTagLine }}</p>
+        <p>{{ characterData }}</p>
+        <button type="button" class="btn btn-outline-primary w-20" (click)="changeMessage()">Reply</button>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6">
+      <div class="card p-2" style="width: 35rem;">
+        <h1>Child Component</h1>
+        <app-child [charInfo]="characterInfo" (characterTagLine)="getShoutMessage($event)">
+        </app-child>
+      </div>
+    </div>
+  </div>
+</div>
