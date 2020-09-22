@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'raksquad-demo-app'`, () => {
+  it(`should have as title 'lcb-rms-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('raksquad-demo-app');
+    expect(app.title).toEqual('lcb-rms-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('raksquad-demo-app app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('lcb-rms-app app is running!');
   });
 });

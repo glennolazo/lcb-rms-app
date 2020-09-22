@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "raksquad-demo-app": {
+    "lcb-rms-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,12 +13,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/raksquad-demo-app",
+            "outputPath": "dist/lcb-rms-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -42,7 +42,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -64,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "raksquad-demo-app:build"
+            "browserTarget": "lcb-rms-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "raksquad-demo-app:build:production"
+              "browserTarget": "lcb-rms-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "raksquad-demo-app:build"
+            "browserTarget": "lcb-rms-app:build"
           }
         },
         "test": {
@@ -112,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "raksquad-demo-app:serve"
+            "devServerTarget": "lcb-rms-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "raksquad-demo-app:serve:production"
+              "devServerTarget": "lcb-rms-app:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "raksquad-demo-app"
+  "defaultProject": "lcb-rms-app"
 }

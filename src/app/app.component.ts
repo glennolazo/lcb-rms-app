@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'raksquad-demo-app';
+  title = 'lcb-rms-app';
 }
