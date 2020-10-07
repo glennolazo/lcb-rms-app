@@ -1,0 +1,60 @@
+// .container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100%;
+//   // background-color: #fff;
+
+//   .login-card {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     box-shadow: 0 0 5px rgba(0,0,0,0.3);
+//     border: 1px solid #e0e0e0;
+//     border-radius: 5px;
+
+//     .company-logo {
+//       display: flex;
+//       align-items: center;
+//       color: green;
+
+//       img {
+//         width: 50px;
+//         height: 50px;
+//       }
+//       p {
+//         font-size: 24px;
+//         margin: 0;
+//       }
+//     }
+//   }
+// }
+
+.login {
+  min-width: 45%;
+}
+
+.company {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: rgb(82, 151, 82);
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.8rem;
+  }
+
+  @media only screen and (max-width: 560px) {
+    font-size: 1.3rem;
+  }
+}
+
+.logo {
+  @media only screen and (max-width: 768px) {
+    height: 80px;
+  }
+
+  @media only screen and (max-width: 650px) {
+    height: 60px;
+  }
+}
